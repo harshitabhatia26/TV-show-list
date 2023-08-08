@@ -4,7 +4,7 @@ import {useNavigate } from "react-router-dom";
 
 export default function InfoModal(props) {
   const navigate = useNavigate();
-  const navigateTo = () => {navigate('/form')};
+  const navigateTo = () => {navigate('/form',{state:{name:props.name}})};
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -32,4 +32,4 @@ export default function InfoModal(props) {
       </Modal>
     </>
   );
-}
+};

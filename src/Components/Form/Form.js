@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 
 function Form() {
     const location = useLocation();
-    console.log('location', location.state);
     const navigate = useNavigate();
     const navigateTo = () => navigate('/');
 
@@ -15,7 +14,7 @@ function Form() {
         <div class="form-group mx-3">
           <label>Movie Name</label>
 
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="As It Was">
+          <input type="text" class="form-control" placeholder={location.state.name} readOnly>
             </input>
         </div>
         <div class="form-group mx-3">
