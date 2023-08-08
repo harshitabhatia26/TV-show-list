@@ -1,3 +1,6 @@
+# View Deployed Website 
+The deployed website is available at https://taupe-sprite-a048d9.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
